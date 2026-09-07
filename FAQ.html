@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Faz o site se adaptar corretamente a celulares e tablets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Arquivo principal de estilos -->
+   <link rel="stylesheet" href="style.css">
+
+    <title>FAQ</title>
+</head>
+
+<body>
+
+    <!--
+        CABEÇALHO DO SITE
+        Contém a mascote/logo e o menu principal.
+        Como só existe um menu principal, usamos o ID "menu-principal".
+    -->
+<header class="cabecalho">
+
+        <!-- CAIXA QUE AGRUPA A IMAGEM E O MENU PARA FICAREM LADO A LADO -->
+        <div class="topo-container">
+
+            <!-- MASCOTE EVA -->
+            <section class="mascote" aria-label="Mascote TechCode">
+                <span class="mascote-cabeca">
+                    <img
+                        src="./imagens/cabeca.png"
+                        alt="Eva, mascote da TechCode"
+                    >
+                </span>
+            </section>
+
+            <!-- MENU PRINCIPAL -->
+            <nav id="menu-principal" aria-label="Menu principal">
+                <ul class="menu-lista">
+                    <li class="menu-item">
+                        <a href="./index.html">HOME</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="./servicos.html">SERVIÇOS</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="./parceiros.html">PARCEIROS</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="./FAQ.html">FAQ</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="./blog.html">BLOG</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="./contato.html">CONTATO</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="./sobre.html">SOBRE NÓS</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+
+    
+    <!--
+        CONTEÚDO PRINCIPAL
+        Cada parte importante da página deve ser
+        organizada dentro de uma SECTION.
+    -->
+<main class="faq-container">
+
+    <!-- Coluna da Esquerda (Textos e Perguntas) -->
+    <section class="faq-content">
+        
+        <!-- Cabeçalho do FAQ -->
+        <section class="faq-header-text">
+           <span class="tag">TECHCODE</span>
+            <h1>FAQ</h1>
+        </section>
+
+        <!-- Barra de Pesquisa -->
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="O que você quer procurar?">
+        </div>
+
+        <!-- Lista de Perguntas (Acordeão) -->
+        <div class="faq-list">
+            <details class="faq-item">
+                <summary>Como faço para acessar o curso?</summary>
+                <p>Após a confirmação da inscrição, você receberá um e-mail com os dados de acesso à plataforma.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>Preciso ter conhecimento prévio?</summary>
+                <p>Não! Nossos cursos começam do absoluto zero, ensinando tudo passo a passo.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>O curso emite certificado?</summary>
+                <p>Sim, ao concluir todas as aulas e projetos, você recebe um certificado digital gratuito.</p>
+            </details>
+        </div>
+
+    </section>
+
+    <!-- Coluna da Direita (Imagem da Mascote) -->
+    <section class="faq-image">
+        <img src="./imagens/eva.png" alt="Robô TechCode">
+    </section>
+
+</main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+
+        <p>
+            © 2026 TechCode. Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Faz o site se adaptar corretamente a celulares e tablets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Arquivo principal de estilos -->
+    
+  <link rel="stylesheet" href="style.css">
+
+    <title>TechCode</title>
+</head>
+
+<body>
+
+    <!--
+        CABEÇALHO DO SITE
+        Contém a mascote/logo e o menu principal.
+        Como só existe um menu principal, usamos o ID "menu-principal".
+    -->
+    <header class="cabecalho">
+
+        <!-- CAIXA QUE AGRUPA A IMAGEM E O MENU PARA FICAREM LADO A LADO -->
+        <div class="topo-container">
+
+            <!-- MASCOTE EVA -->
+            <section class="mascote" aria-label="Mascote TechCode">
+                <span class="mascote-cabeca">
+                    <img
+                        src="./imagens/cabeca.png"
+                        alt="Eva, mascote da TechCode"
+                    >
+                </span>
+            </section>
+
+            <!-- MENU PRINCIPAL -->
+            <nav id="menu-principal" aria-label="Menu principal">
+                <ul class="menu-lista">
+                    <li class="menu-item">
+                        <a href="./index.html">HOME</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="./servicos.html">SERVIÇOS</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="./parceiros.html">PARCEIROS</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="./FAQ.html">FAQ</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="./blog.html">BLOG</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="./contato.html">CONTATO</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="./sobre.html">SOBRE NÓS</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!--
+        CONTEÚDO PRINCIPAL
+        Cada parte importante da página deve ser
+        organizada dentro de uma SECTION.
+    -->
+    <main>
+
+        <!-- Seção de apresentação -->
+        <section id="inicio" class="apresentacao">
+
+            <section class="apresentacao-texto">
+
+                <span class="tag">TECHCODE</span>
+
+                <h1>
+                    Venha fazer parte do nosso curso
+                    <strong>Curso intuitivo e divertido</strong>
+                </h1>
+
+                
+
+                <a href="./servicos.html" class="botao-principal">
+                    ACESSE NOSSO CURSO
+                </a>
+
+            </section>
+
+
+            <!-- Área visual da página -->
+            <section class="apresentacao-imagem">
+
+                <img
+                    src="./imagens/eva.png"
+                    alt="Eva, mascote da TechCode"      
+                >
+
+            </section>
+
+        </section>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+
+        <p>
+            © 2026 TechCode. Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,352 @@
+/* --- RESET BÁSICO --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fundo escuro do site inteiro */
+body {
+    background-color: #12161a;
+    color: #ffffff;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Garante que os títulos tenham aquele destaque azul */
+h2 {
+    color: #00bfff; 
+}
+
+h1 {
+    color: #00bfff;
+}
+
+/* --- TOPO E MENU --- */
+.cabecalho {
+    background-color: #1a2026;
+    padding: 10px 0;
+}
+
+.topo-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Controla o tamanho da cabeça do robô no topo */
+.mascote-cabeca img {
+    height: 40px;
+    width: auto;
+}
+
+/* Coloca os links do menu lado a lado */
+.menu-lista {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.menu-item a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.menu-item a:hover {
+    color: #00bfff;
+}
+
+/* --- BANNER PRINCIPAL (HOME) --- */
+main {
+    max-width: 1100px;
+    margin: 80px auto 0 auto;
+    padding: 0 20px;
+}
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.apresentacao-texto {
+    flex: 1;
+}
+
+.tag {
+    color: #cccccc;
+    font-weight: bold;
+    font-size: 12px;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.apresentacao-texto h1 {
+    color: #00bcff;
+    font-size: 38px;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.apresentacao-texto h1 strong {
+    display: block;
+    color: #cccccc;
+    font-size: 38px;
+    margin-top: 10px;
+}
+
+.botao-principal {
+    display: inline-block;
+    background-color: #00bcff;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+.apresentacao-imagem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.apresentacao-imagem img {
+    max-width: 300px;
+    height: auto;
+}
+
+/* --- PÁGINA DE SERVIÇOS --- */
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.secao-titulo {
+    margin-bottom: 30px;
+}
+
+/* Padroniza o título da página de serviços */
+.secao-titulo h2 {
+    font-size: 38px;
+    font-weight: bold;
+    color: #ffffff;
+    line-height: 1.2;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.secao-titulo p {
+    color: #cccccc;
+    font-size: 15px;
+}
+
+.servicos-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 50px;
+}
+
+.cards-trilha {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Estilo aprimorado dos cards com transição suave e hover */
+.card-servico {
+    background-color: #161616;
+    border: 1px solid #282828;
+    padding: 20px 24px;
+    border-radius: 8px;
+    width: 380px;
+    color: #fff;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito ao passar o mouse: "salta" levemente e ganha brilho azul */
+.card-servico:hover {
+    transform: translateY(-5px);
+    border-color: #00bfff;
+    box-shadow: 0 5px 15px rgba(0, 191, 255, 0.2);
+}
+
+.card-servico h3 {
+    color: #00bfff;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.card-servico p {
+    color: #bbb;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.imagem-destaque-servicos img {
+    width: 320px;
+    height: auto;
+}
+
+/* --- PÁGINA DE PARCEIROS --- */
+.parceiros-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 50px;
+}
+
+.grade-parceiros {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    flex: 1;
+}
+
+.card-parceiro {
+    background-color: #1a2026;
+    border: 1px solid #283038;
+    height: 90px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.imagem-destaque-parceiros img.img-parceiros {
+    width: 320px;
+    height: auto;
+    display: block;
+}
+
+/* --- AJUSTES GERAIS DE LAYOUT --- */
+main, .conteudo-principal {
+    flex: 1;
+}
+
+/* Estilo do rodapé no inferior */
+footer {
+    text-align: center;
+    padding: 25px 0;
+    color: #aaaaaa;
+    background-color: #1a2026;
+    width: 100%;
+    margin-top: auto;
+}
+/* --- PÁGINA DE BLOG (ESTILOS DOS CARDS) --- */
+.blog-container {
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.blog-header-text {
+    margin-bottom: 40px;
+}
+
+.blog-header-text h1 {
+    color: #00bfff;
+    font-size: 42px;
+    margin: 5px 0 10px 0;
+}
+
+.blog-header-text p {
+    color: #aaa;
+    font-size: 16px;
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.post-card {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 25px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+    border-color: #00bfff;
+    box-shadow: 0 5px 15px rgba(0, 191, 255, 0.2);
+}
+
+.post-card h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.post-date {
+    color: #777;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.post-card p {
+    color: #bbb;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.ler-mais {
+    color: #00bfff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.ler-mais:hover {
+    text-decoration: underline;
+}
+.blog-container-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+    gap: 40px;
+}
+
+.blog-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.blog-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 420px;
+}
