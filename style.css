@@ -350,3 +350,60 @@ footer {
     height: auto;
     max-height: 420px;
 }
+
+
+.sobre-empresa,
+.nossa-missao,
+.nossos-cursos,
+.nossa-equipe,
+.nossa-visao {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.sobre-empresa {
+    text-align: center;
+}
+
+.sobre-empresa h1 {
+    font-size: 40px;
+}
+
+.sobre-empresa p,
+.nossa-missao p,
+.nossos-cursos p,
+.nossa-equipe p,
+.nossa-visao p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.formulario-contato {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 30px;
+}
+
+.formulario-contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario-contato input,
+.formulario-contato textarea {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.formulario-contato button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
